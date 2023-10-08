@@ -52,15 +52,18 @@
 }
 
 /* Login Page */
-
 #login-page {
-  background-image: linear-gradient(#40a9ff, #096dd9);
+  /* background-image: linear-gradient(#40a9ff, #096dd9); */
   position: absolute;
-  top: 0px;
-  bottom: 0px;
-  left: 0px;
-  right: 0px;
+  top: auto;
+  bottom: auto;
+  left: auto;
+  right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
 
 #login-card {
   position: relative;
@@ -70,8 +73,12 @@
   padding-bottom: 66px;
   width: 420px;
   text-align: center;
-  background-color: white;
-  border-radius: 22px;
+  border-radius: 50px;
+  border-radius: 50px;
+  /* Neumorphism */
+  background: linear-gradient(145deg, #f0f0f0, #cacaca);
+  box-shadow: 23px 23px 46px #b5b5b5,
+    -23px -23px 46px #ffffff;
 }
 
 .login-button {
@@ -105,4 +112,70 @@
   position: relative;
   left: calc(50vw - 33px);
   top: calc(50vh - 22px);
+}
+
+
+/* background */
+
+body {
+  background-image: url('../src/assets/bgchat.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-animation: slidein 100s;
+  animation: slidein 100s;
+
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+}
+
+@-webkit-keyframes slidein {
+  from {
+    background-position: top;
+    background-size: 3000px;
+  }
+
+  to {
+    background-position: -100px 0px;
+    background-size: 2750px;
+  }
+}
+
+@keyframes slidein {
+  from {
+    background-position: top;
+    background-size: 800px;
+  }
+
+  to {
+    background-position: -100px 0px;
+    background-size: 2750px;
+  }
+
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  /* background: rgba(75, 75, 250, 0.3); */
+  border-radius: 3px;
+}
+
+.center h1 {
+  text-align: center;
+  color: white;
+  font-family: 'Source Code Pro', monospace;
+  text-transform: uppercase;
 }
