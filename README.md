@@ -1,10 +1,10 @@
 # LetsChat Application
 
-![Chat Application](https://i.ibb.co/GJwyy9m/Bv9-Js3-QLOLY-HD.jpg)
-
+![chat app](https://github.com/Saravanakumar1802/Chat_App/assets/106732392/9ea4f7c7-e4fc-49b5-a0b7-5c93a02eb24e)
 ## Introduction
 
  we create a full Realtime Chat Application with Social Auth and dedicated chat APIs/sockets.
+
 
 You will learn how to build a react chat app using [https://chatengine.io](https://chatengine.io)
 
